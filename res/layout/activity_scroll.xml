@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ff00"
+            android:orientation="vertical" >
+ <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="重写ListView的方式"/>
+            <com.example.myandroidlib.View.MyListView
+                android:id="@+id/lv_data2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fffbff"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+            <ImageView 
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="300dip"
+                android:background="#f0fff0"/>
+             <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="代码计算ListView高度"/>
+            <ListView
+                android:id="@+id/lv_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fffbff"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

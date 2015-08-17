@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.example.myandroidlib"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="走起" />
+        <Button
+            android:id="@+id/btn_break"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="复位" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+        <com.example.myandroidlib.View.RoundProgressBar
+            android:id="@+id/roundProgressBar1"
+            android:layout_width="155dp"
+            android:layout_height="169dp"
+            android_custom:roundColor="#FF00FF"
+            android_custom:roundProgressColor="#00ff00"
+            android_custom:roundWidth="15dp"
+            android_custom:style="STROKE"
+            android_custom:textColor="#00ffff"
+            android_custom:textIsDisplayable="true"
+            android_custom:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
