@@ -19,6 +19,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 	Button btn_scrollButton;
 	Button btn_progress;
 	Button btn_lockButton;
+	Button btn_gifButton;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,9 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 
 		btn_lockButton = (Button) findViewById(R.id.btn_lockpatter);
 		btn_lockButton.setOnClickListener(this);
+
+		btn_gifButton = (Button) findViewById(R.id.btn_gifshow);
+		btn_gifButton.setOnClickListener(this);
 	}
 
 	@Override
@@ -91,6 +95,10 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			break;
 		case R.id.btn_lockpatter:
 			intent = new Intent(this, LockPatterActivity.class);
+			break;
+		case R.id.btn_gifshow:
+			intent = new Intent(this, GifShowActivity.class);
+			break;
 		default:
 			break;
 		}

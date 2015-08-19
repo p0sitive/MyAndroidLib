@@ -2,6 +2,9 @@ package com.example.myandroidlib.View;
 
 import java.io.InputStream;
 
+import com.example.myandroidlib.R;
+import com.example.myandroidlib.util.BitmapFormatUtil;
+
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -20,7 +23,14 @@ public class GifImageView extends ImageView {
 	
 	int mWidth,mHeight;
 	long mMovieStart;
-	
+	BitmapFormatUtil tool;
+	InputStream is;
+	public void setIs(InputStream is) {
+		this.is = is;
+		init();
+	}
+
+
 	public GifImageView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		init();
@@ -28,18 +38,21 @@ public class GifImageView extends ImageView {
 	
 
 	public GifImageView(Context context, AttributeSet attrs) {
-		this(context, attrs,0);
+		super(context, attrs);
+//		init();
 	}
 	
 	public GifImageView(Context context) {
 		this(context,null);
 	}
 
+	
 	private void init() {
 		//获取图片资源的ID
 //		this.g
-		int resID=0;
-		InputStream is=getResources().openRawResource(resID);
+//		int resID=0;
+		is=getResources().openRawResource(R.drawable.gif_test);
+		if(is.equals(null))return;
 		mMovie=Movie.decodeStream(is);
 		if(mMovie!=null){
 			Bitmap bitmap=BitmapFactory.decodeStream(is);
