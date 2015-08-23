@@ -159,6 +159,7 @@ public class BitmapFormatUtil {
 	 * @return
 	 */
 	public Drawable Bitmap2Drawable(Bitmap bitmap){
+		@SuppressWarnings("deprecation")
 		BitmapDrawable bd=new BitmapDrawable(bitmap);
 		return (Drawable)bd;
 	}

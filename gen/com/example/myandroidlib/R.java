@@ -223,6 +223,25 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int backgroundStacked=0x7f010030;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_color=0x7f010078;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_width=0x7f010077;
         /**  A style that may be applied to Buttons placed within a
          LinearLayout with the style buttonBarStyle to form a button bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1179,7 +1198,10 @@ containing a value of this type.
         public static final int progress_bar_states=0x7f020065;
         public static final int search_clear_normal=0x7f020066;
         public static final int search_clear_pressed=0x7f020067;
-        public static final int subway_map=0x7f020068;
+        public static final int share_icon_qq=0x7f020068;
+        public static final int share_icon_qq_a=0x7f020069;
+        public static final int share_icon_qq_selector=0x7f02006a;
+        public static final int subway_map=0x7f02006b;
     }
     public static final class id {
         public static final int CLEAR=0x7f05001a;
@@ -1197,22 +1219,23 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050028;
-        public static final int action_settings=0x7f050059;
+        public static final int action_settings=0x7f05005a;
         public static final int activity_chooser_view_content=0x7f050029;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
-        public static final int btn_break=0x7f05004f;
-        public static final int btn_delete_edittext=0x7f050046;
-        public static final int btn_gifshow=0x7f05004c;
-        public static final int btn_go=0x7f05004e;
-        public static final int btn_lockpatter=0x7f05004b;
-        public static final int btn_photoview=0x7f050048;
-        public static final int btn_progressbar=0x7f050049;
-        public static final int btn_reset=0x7f050050;
-        public static final int btn_risenumber=0x7f050047;
-        public static final int btn_scroll_list=0x7f05004a;
-        public static final int button1=0x7f050053;
+        public static final int btn_break=0x7f050050;
+        public static final int btn_delete_edittext=0x7f050047;
+        public static final int btn_gifshow=0x7f05004d;
+        public static final int btn_go=0x7f05004f;
+        public static final int btn_lockpatter=0x7f05004c;
+        public static final int btn_photoview=0x7f050049;
+        public static final int btn_progressbar=0x7f05004a;
+        public static final int btn_reset=0x7f050051;
+        public static final int btn_risenumber=0x7f050048;
+        public static final int btn_scroll_list=0x7f05004b;
+        public static final int button1=0x7f050054;
         public static final int checkbox=0x7f050031;
+        public static final int circle_imageview=0x7f050044;
         public static final int collapseActionView=0x7f05000d;
         public static final int default_activity_button=0x7f05002c;
         public static final int dialog=0x7f05000e;
@@ -1226,27 +1249,27 @@ containing a value of this type.
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f05002e;
-        public static final int icon_iv=0x7f050057;
+        public static final int icon_iv=0x7f050058;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f05002b;
-        public static final int iv=0x7f050055;
+        public static final int iv=0x7f050056;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f05002d;
-        public static final int lock=0x7f050045;
+        public static final int lock=0x7f050046;
         public static final int login=0x7f050042;
-        public static final int lv_data=0x7f050056;
-        public static final int lv_data2=0x7f050054;
+        public static final int lv_data=0x7f050057;
+        public static final int lv_data2=0x7f050055;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
         public static final int password=0x7f050041;
-        public static final int photoview=0x7f05004d;
+        public static final int photoview=0x7f05004e;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f050033;
-        public static final int risenumber_textview=0x7f050052;
-        public static final int roundProgressBar1=0x7f050051;
+        public static final int risenumber_textview=0x7f050053;
+        public static final int roundProgressBar1=0x7f050052;
         public static final int search_badge=0x7f050036;
         public static final int search_bar=0x7f050035;
         public static final int search_button=0x7f050037;
@@ -1264,9 +1287,9 @@ containing a value of this type.
         public static final int split_action_bar=0x7f050022;
         public static final int submit_area=0x7f05003d;
         public static final int tabMode=0x7f050002;
-        public static final int text=0x7f050044;
+        public static final int text=0x7f050045;
         public static final int title=0x7f05002f;
-        public static final int title_tv=0x7f050058;
+        public static final int title_tv=0x7f050059;
         public static final int top_action_bar=0x7f050024;
         public static final int up=0x7f050025;
         public static final int useLogo=0x7f050003;
@@ -1332,7 +1355,8 @@ containing a value of this type.
         public static final int activity_risenumber=0x7f03001e;
         public static final int activity_scroll=0x7f03001f;
         public static final int support_simple_spinner_dropdown_item=0x7f030020;
-        public static final int view_toast=0x7f030021;
+        public static final int test=0x7f030021;
+        public static final int view_toast=0x7f030022;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1611,6 +1635,7 @@ containing a value of this type.
         public static final int Widget_AppCompat_ProgressBar=0x7f0b000a;
         public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0b0009;
         public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0b0022;
+        public static final int dialog_content_share_text=0x7f0b008d;
     }
     public static final class styleable {
         /**  ============================================ 
@@ -2330,6 +2355,52 @@ containing a value of this type.
           @attr name com.example.myandroidlib:type
         */
         public static final int CanClearEditText_type = 0;
+        /** Attributes that can be used with a CircleImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CircleImageView_border_color com.example.myandroidlib:border_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_border_width com.example.myandroidlib:border_width}</code></td><td></td></tr>
+           </table>
+           @see #CircleImageView_border_color
+           @see #CircleImageView_border_width
+         */
+        public static final int[] CircleImageView = {
+            0x7f010077, 0x7f010078
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.myandroidlib.R.attr#border_color}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.myandroidlib:border_color
+        */
+        public static final int CircleImageView_border_color = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.myandroidlib.R.attr#border_width}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.myandroidlib:border_width
+        */
+        public static final int CircleImageView_border_width = 0;
         /** Attributes that can be used with a CompatTextView.
            <p>Includes the following attributes:</p>
            <table>

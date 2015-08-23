@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.myandroidlib"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
-    <com.example.myandroidlib.View.GifImageView 
+    android:layout_height="match_parent" >
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/gifview"
-        android:src="@drawable/gif_test"/>
+        android:orientation="vertical" >
 
-</LinearLayout>
+        <com.example.myandroidlib.View.GifImageView
+            android:id="@+id/gifview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gif_test" />
+
+        <com.example.myandroidlib.View.CircleImageView
+            android:id="@+id/circle_imageview"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            app:border_color="#ff0000"
+            android:layout_gravity="center"
+            app:border_width="2dip" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,5 +1,6 @@
 package com.example.myandroidlib;
 
+import android.R.integer;
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.TextUtils;
